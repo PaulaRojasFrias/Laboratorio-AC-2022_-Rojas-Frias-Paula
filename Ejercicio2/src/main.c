@@ -31,12 +31,12 @@ void main()
   // Infinite loop
   while (1)
     {
-	  //El LED RED parpadea con un periodo de 100 ms
+	  //El LED RED parpadea con un periodo de 300 ms
 
 	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, 1);
-	  for (int i=0;i<100000000;i++);
+	  for (int i=0;i<30000000;i++);
 	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, 0);
-	  for (int i=0;i<100000000;i++);
+	  for (int i=0;i<30000000;i++);
 
 	  // El pulsador selecciona LD6 (blue)
 
